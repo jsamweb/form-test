@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Titulo de la encuesta</h1>
+            <p id="description">Esta es la descripcion de la encuesta</p>
+        </header>
+           <form id="survey-form" action="">
+                <div class="form-group">
+                   <label id="name-label" for="name">Nombre</label>
+                   <input class="form-control" id="name" type="text" name="name" placeholder="Introduce tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">email</label>
+                    <input class="form-control" id="email" type="email" name="email" placeholder="Introduce tu email" required >
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Edad (+18)</label>
+                    <input class="form-control" id="number" type="number" name="age" min="18" max="120" placeholder="Introduce tu Edad">
+                </div>
+                <div class="form-group">
+                    <p>Cual seria el rol que mejor te define</p>
+                    <select class="form-select" name="role" id="dropdown" required>
+                        <option  disabled selected value>Selecciona uno</option>
+                        <option value="primary-student">Estudiante de primaria</option>
+                        <option value="secondary-student">Estudiante de bachillerato</option>
+                        <option value="university-student">Estudiante universitario</option>
+                        <option value="tsu-student">Estudiante de T.S.U.</option>
+                        <option value="first-work">Primer trabajo</option>
+                        <option value="1año-experiencia">+1 año de experiencia laboral</option>
+                        <option value="2año-experiencia">+2 año de experiencia laboral</option>
+                        <option value="5año-experiencia">+5 año de experiencia laboral</option>
+                        <option value="other">Cualquier otro tipo de experiencia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Estos son botones de seleccion de radio</p>
+                    <label>
+                        <input class="form-radio" type="radio" name="user-says" value="yes" checked>
+                        Definitivamente si
+                    </label>
+                    <label>
+                        <input class="form-radio" type="radio" name="user-says" value="no" >
+                        Definitivamente no
+                    </label>
+                    <label>
+                        <input class="form-radio" type="radio" name="user-says" value="maybe" >
+                        no tengo seguridad del todo
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Cual seria el rol que mejor te define</p>
+                    <select class="form-select" name="role-2" id="dropdown-2" required>
+                        <option disabled selected value>Selecciona uno</option>
+                        <option value="primary-student">Estudiante de primaria</option>
+                        <option value="secondary-student">Estudiante de bachillerato</option>
+                        <option value="university-student">Estudiante universitario</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Estos son botones de seleccion de radio</p>
+                    <label>
+                        <input class="form-box" type="checkbox" name="user-says" value="design" >
+                        Diseño
+                    </label>
+                    <label>
+                        <input class="form-box" type="checkbox" name="user-says" value="photo" >
+                        Fotografia
+                    </label>
+                    <label>
+                        <input class="form-box" type="checkbox" name="user-says" value="video" >
+                        Produccion audiovisual
+                    </label>
+                    <label>
+                        <input class="form-box" type="checkbox" name="user-says" value="development" >
+                        Programación
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Estamos abiertos a sugerencias, tu opinion es lo que mas nos importa</p>
+                    <textarea maxlength="350" class="form-text" name="comment" id="comments" cols="30" rows="10" placeholder="Max 350 caracteres"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit">Enviar</button>
+                </div>
+
+            </form> 
+        
+    </div>
+</body>
+</html>
